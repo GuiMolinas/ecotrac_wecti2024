@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="txtWelcome">Bem Vindo(a) ao EcoTrack!</string>
+    <string name="cntMascot">Mascote do EcoTrack</string>
+    <string name="txtInstruction">Para começar, digite seu nome</string>
+    <string name="txtHintName"> Digite seu nome </string>
+    <string name="txtBtnStart"> Começar! </string>
+
 </resources>
