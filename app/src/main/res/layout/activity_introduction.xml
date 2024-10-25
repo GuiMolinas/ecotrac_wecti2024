@@ -34,8 +34,15 @@
         android:textSize="18sp"
         android:textStyle="bold"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="20dp"
         android:textAlignment="center" />
+
+    <ImageView
+        android:id="@+id/imgEarth"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/earth"
+        android:layout_marginBottom="10dp"/>
 
     <!-- Botão Água -->
     <Button
