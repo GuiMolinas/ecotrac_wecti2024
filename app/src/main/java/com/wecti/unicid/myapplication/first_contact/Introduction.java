@@ -1,4 +1,4 @@
-package com.wecti.unicid.myapplication;
+package com.wecti.unicid.myapplication.first_contact;
 
 import android.os.Bundle;
 import android.widget.Button;
@@ -11,6 +11,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.bumptech.glide.Glide;
+import com.wecti.unicid.myapplication.R;
 
 public class Introduction extends AppCompatActivity {
 

@@ -12,6 +12,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.wecti.unicid.myapplication.first_contact.Welcome;
+
 /* bom dia - jj */
 
 public class Splash extends AppCompatActivity {

@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:padding="8dp"
     android:gravity="center_horizontal"
-    tools:context=".Introduction">
+    tools:context=".first_contact.Introduction">
 
     <!-- Texto de introdução -->
     <TextView

@@ -1,4 +1,4 @@
-package com.wecti.unicid.myapplication;
+package com.wecti.unicid.myapplication.first_contact;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -12,6 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.wecti.unicid.myapplication.R;
 
 public class Welcome extends AppCompatActivity {
 
