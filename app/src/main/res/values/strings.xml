@@ -5,11 +5,13 @@
     <string name="txtInstruction">Para começar, digite seu nome</string>
     <string name="txtHintName"> Digite seu nome </string>
     <string name="txtBtnStart"> Começar! </string>
+
     <string name="txtIntroduction"> O EcoTrack é um app que te auxilia a preservar o nosso planeta. </string>
     <string name="txtOption"> Qual opção você deseja explorar primeiro? </string>
     <string name="txtBtnWater"> 💧 Água </string>
     <string name="txtBtnEletricity"> 💡 Eletricidade </string>
     <string name="txtBtnCarbon"> 👣 Pegada de Carbono </string>
+
     <string name="txtWater"> Água 💧 </string>
     <string name="txtMaquina"> Quantas vezes você utiliza a máquina de lavar por SEMANA? </string>
     <string name="txtHintMaquina"> Ex: 2 </string>
@@ -27,7 +29,9 @@
     <string name="txtHintLavaLouca"> Ex: 6 </string>
     <string name="txtBtnDados"> Enviar Dados </string>
 
+    <string name="txtEletricidade"> Eletricidade 💡 </string>
 
+    <string name="txtCarbono"> Pegada de Carbono 👣 </string>
 
 
 </resources>
