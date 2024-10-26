@@ -10,7 +10,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.wecti.unicid.myapplication.R;
 
-public class ask_Eletricity extends AppCompatActivity {
+public class askEletricity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

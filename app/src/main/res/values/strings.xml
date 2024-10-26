@@ -10,6 +10,24 @@
     <string name="txtBtnWater"> 💧 Água </string>
     <string name="txtBtnEletricity"> 💡 Eletricidade </string>
     <string name="txtBtnCarbon"> 👣 Pegada de Carbono </string>
+    <string name="txtWater"> Água 💧 </string>
+    <string name="txtMaquina"> Quantas vezes você utiliza a máquina de lavar por SEMANA? </string>
+    <string name="txtHintMaquina"> Ex: 2 </string>
+    <string name="txtTanque"> Por quantos minutos você usa o tanque por DIA? (Opcional) </string>
+    <string name="txtHintTanque"> Ex: 10 </string>
+    <string name="txtDescarga"> Quantas vezes você dá descarga por DIA? </string>
+    <string name="txtHintDescarga"> Ex: 3 </string>
+    <string name="txtPia"> Por quantos minutos você usa a pia do banheiro por DIA? </string>
+    <string name="txtHintPia"> Ex: 5 </string>
+    <string name="txtChuveiro"> Por quantos minutos você deixa o chuveiro ligado por DIA? </string>
+    <string name="txtHintChuveiro"> Ex: 20 </string>
+    <string name="txtCozinha"> Por quantos minutos você usa a pia da cozinha por DIA? </string>
+    <string name="txtHintCozinha"> Ex: 15 </string>
+    <string name="txtLavaLouca"> Quantas vezes você utiliza a lava-louças por SEMANA? (Opcional) </string>
+    <string name="txtHintLavaLouca"> Ex: 6 </string>
+    <string name="txtBtnDados"> Enviar Dados </string>
+
+
 
 
 </resources>

@@ -1,10 +1,161 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".asks.askWater">
+    tools:context=".asks.askWater"
+    android:padding="16dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/txtWater"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtWater"
+            android:textColor="#1E3A5F"
+            android:textSize="44sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:textAlignment="center" />
+
+        <ImageView
+            android:id="@+id/imgWater"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/water"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Perguntas de consumo de água -->
+        <TextView
+            android:id="@+id/txtMaquina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtMaquina"
+            android:textColor="#1E3A5F"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp"/>
+        <EditText
+            android:id="@+id/edtMaquina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/txtHintMaquina"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/txtTanque"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtTanque"
+            android:textColor="#1E3A5F"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp"/>
+        <EditText
+            android:id="@+id/edtTanque"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/txtHintTanque"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/txtDescarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtDescarga"
+            android:textColor="#1E3A5F"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp"/>
+        <EditText
+            android:id="@+id/edtDescarga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/txtHintDescarga"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/txtPia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtPia"
+            android:textColor="#1E3A5F"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp"/>
+        <EditText
+            android:id="@+id/edtPia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/txtHintPia"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/txtChuveiro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtChuveiro"
+            android:textColor="#1E3A5F"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp"/>
+        <EditText
+            android:id="@+id/edtChuveiro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/txtHintChuveiro"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/txtCozinha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtCozinha"
+            android:textColor="#1E3A5F"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp"/>
+        <EditText
+            android:id="@+id/edtCozinha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/txtHintCozinha"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/txtLavaLouca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtLavaLouca"
+            android:textColor="#1E3A5F"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp"/>
+        <EditText
+            android:id="@+id/edtLavaLouca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/txtHintLavaLouca"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Botão de envio -->
+        <Button
+            android:id="@+id/btnEnviarDados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtBtnDados"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#1E3A5F"
+            android:background="@drawable/rounded_button"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+</ScrollView>

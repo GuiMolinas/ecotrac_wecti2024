@@ -16,7 +16,7 @@
             android:name=".asks.askCarbon"
             android:exported="false" />
         <activity
-            android:name=".asks.ask_Eletricity"
+            android:name=".asks.askEletricity"
             android:exported="false" />
         <activity
             android:name=".asks.askWater"

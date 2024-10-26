@@ -1,6 +1,8 @@
 package com.wecti.unicid.myapplication.first_contact;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
@@ -12,6 +14,9 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.bumptech.glide.Glide;
 import com.wecti.unicid.myapplication.R;
+import com.wecti.unicid.myapplication.asks.askCarbon;
+import com.wecti.unicid.myapplication.asks.askEletricity;
+import com.wecti.unicid.myapplication.asks.askWater;
 
 public class Introduction extends AppCompatActivity {
 
@@ -38,5 +43,32 @@ public class Introduction extends AppCompatActivity {
         Glide.with(this)
                 .load(R.drawable.earth)
                 .into(image);
+
+        btnWater.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Introduction.this, askWater.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        btnEletricity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Introduction.this, askEletricity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        btnCarbon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Introduction.this, askCarbon.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 }
