@@ -5,6 +5,7 @@
     <string name="txtInstruction">Para começar, digite seu nome</string>
     <string name="txtHintName"> Digite seu nome </string>
     <string name="txtBtnStart"> Começar! </string>
+    <string name="dcspbackArrow"> Voltar </string>
 
     <string name="txtIntroduction"> O EcoTrack é um app que te auxilia a preservar o nosso planeta. </string>
     <string name="txtOption"> Qual opção você deseja explorar primeiro? </string>

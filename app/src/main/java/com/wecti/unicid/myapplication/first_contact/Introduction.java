@@ -49,7 +49,6 @@ public class Introduction extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Introduction.this, askWater.class);
                 startActivity(intent);
-                finish();
             }
         });
 
@@ -58,7 +57,6 @@ public class Introduction extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Introduction.this, askEletricity.class);
                 startActivity(intent);
-                finish();
             }
         });
 
@@ -67,7 +65,6 @@ public class Introduction extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Introduction.this, askCarbon.class);
                 startActivity(intent);
-                finish();
             }
         });
     }

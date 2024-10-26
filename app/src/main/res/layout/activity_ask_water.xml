@@ -14,7 +14,20 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center_horizontal"
-        android:layout_marginStart="8dp">
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <ImageButton
+            android:id="@+id/btnVoltar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:layout_marginBottom="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/dcspbackArrow"
+            android:padding="8dp"
+            android:src="@drawable/left"
+            android:scaleType="fitCenter"/>
 
         <TextView
             android:id="@+id/txtWater"
@@ -33,7 +46,8 @@
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:src="@drawable/water"
-            android:layout_marginBottom="20dp" />
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="0dp"/>
 
         <!-- Perguntas de consumo de água -->
         <TextView

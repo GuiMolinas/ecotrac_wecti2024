@@ -1,6 +1,8 @@
 package com.wecti.unicid.myapplication.asks;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
@@ -15,6 +17,7 @@ import com.wecti.unicid.myapplication.R;
 public class askWater extends AppCompatActivity {
 
     ImageView imageView;
+    ImageButton back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,9 +31,17 @@ public class askWater extends AppCompatActivity {
         });
 
         imageView = findViewById(R.id.imgWater);
+        back = findViewById(R.id.btnVoltar);
 
         Glide.with(this)
                 .load(R.drawable.water)
                 .into(imageView);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 }
