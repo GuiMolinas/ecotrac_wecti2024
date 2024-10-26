@@ -49,6 +49,83 @@
             android:layout_marginBottom="20dp"
             android:layout_marginStart="0dp"/>
 
+        <TextView
+            android:id="@+id/txtAparelhos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtAparelhos"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp"
+            android:textColor="#FFE134" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/arrayPerguntaAparelho"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/txtTempo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtTempo"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp"
+            android:textColor="#FFE134" />
+
+        <EditText
+            android:id="@+id/edtTempo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="@string/txtHintTempo"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Botão para adicionar dispositivo à lista -->
+        <Button
+            android:id="@+id/btnAdicionar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtBtnAdicionar"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#FFE134"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_button"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Lista de dispositivos adicionados -->
+        <TextView
+            android:id="@+id/txtSelecionados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtSelecionados"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="16dp"
+            android:textColor="#FFE134" />
+
+        <LinearLayout
+            android:id="@+id/deviceList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <!-- Botão de cálculo -->
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtBtnCalcularCarbono"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#FFE134"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_button"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="20dp"/>
+
     </LinearLayout>
 
 </ScrollView>

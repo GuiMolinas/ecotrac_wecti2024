@@ -31,6 +31,40 @@
     <string name="txtBtnDados"> Enviar Dados </string>
 
     <string name="txtEletricidade"> Eletricidade 💡 </string>
+    <string name="txtAparelhos"> Escolha os aparelhos que você utiliza: </string>
+    <string-array name="arrayPerguntaAparelho">
+        <item> -- Selecione -- </item>
+        <item> Ar-condicionado </item>
+        <item> Aparelho de som </item>
+        <item> Aspirador </item>
+        <item> Batedeira </item>
+        <item> Cafeteira </item>
+        <item> Carregador de celular </item>
+        <item> Chuveiro </item>
+        <item>  Computador </item>
+        <item> Exaustor </item>
+        <item> Ferro de passar roupa </item>
+        <item> Freezer </item>
+        <item> Geladeira </item>
+        <item>  Grill </item>
+        <item> Lâmpada fluorescente </item>
+        <item> Lâmpada incandescente </item>
+        <item> Liquidificador </item>
+        <item>  Máquina de lavar </item>
+        <item>  Microondas </item>
+        <item> Sanduicheira </item>
+        <item> Secador de cabelo </item>
+        <item> Televisor </item>
+        <item> Telefone sem fio </item>
+        <item> Torradeira </item>
+        <item> Ventilador </item>
+        <item> Videogame </item>
+    </string-array>
+    <string name="txtTempo"> Tempo de uso diário (horas): </string>
+    <string name="txtHintTempo"> Ex: 2.5 </string>
+    <string name="txtSelecionados"> Dispositivos Selecionados </string>
+    <string name="txtBtnAdicionar"> Adicionar dispositivo </string>
+
 
     <string name="txtCarbono"> Pegada de Carbono 👣 </string>
     <string name="txtPerguntaEnergia"> Quantos kWh de eletricidade você consome em média por MÊS? </string>
@@ -47,7 +81,6 @@
         <item>Onívora com baixo consumo de carne</item>
         <item>Onívora com alto consumo de carne</item>
     </string-array>
-
     <string name="txtPerguntaPlastico"> Quantos produtos de plástico de uso único (garrafas, sacolas, copos) você utiliza por MÊS? </string>
     <string name="txtHintPerguntaPlastico"> Ex: 20 </string>
     <string name="txtPerguntaAviao"> Quantas viagens aéreas de longa distância você faz por ANO? </string>
