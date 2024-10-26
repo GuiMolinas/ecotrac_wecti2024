@@ -17,6 +17,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp">
 
+        <!-- Botão para voltar -->
         <ImageButton
             android:id="@+id/btnVoltar"
             android:layout_width="50dp"
@@ -29,6 +30,7 @@
             android:src="@drawable/left"
             android:scaleType="fitCenter"/>
 
+        <!-- Título da seção -->
         <TextView
             android:id="@+id/txtCarbono"
             android:layout_width="wrap_content"
@@ -41,6 +43,7 @@
             android:layout_marginBottom="20dp"
             android:textAlignment="center" />
 
+        <!-- Imagem representativa -->
         <ImageView
             android:id="@+id/imgCarbon"
             android:layout_width="match_parent"
@@ -48,6 +51,119 @@
             android:src="@drawable/carbon"
             android:layout_marginBottom="20dp"
             android:layout_marginStart="0dp"/>
+
+        <!-- Pergunta sobre consumo de energia -->
+        <TextView
+            android:id="@+id/txtEnergia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtPerguntaEnergia"
+            android:textColor="#FF7369"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp" />
+        <EditText
+            android:id="@+id/edtEnergia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="@string/txtHintPerguntaEnergia"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Pergunta sobre uso de transporte público -->
+        <TextView
+            android:id="@+id/txtTransporte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtPerguntaTransporte"
+            android:textColor="#FF7369"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp" />
+        <EditText
+            android:id="@+id/edtTransporte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="@string/txtHintPerguntaTransporte"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Pergunta sobre uso de veículo próprio -->
+        <TextView
+            android:id="@+id/txtVeiculo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtPerguntaVeiculo"
+            android:textColor="#FF7369"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp" />
+        <EditText
+            android:id="@+id/edtVeiculo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="@string/txtHintPerguntaVeiculo"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Pergunta sobre dieta -->
+        <TextView
+            android:id="@+id/txtDieta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtPerguntaDieta"
+            android:textColor="#FF7369"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp" />
+        <Spinner
+            android:id="@+id/spinnerDieta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/arrayPerguntaDieta"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Pergunta sobre uso de plásticos de uso único -->
+        <TextView
+            android:id="@+id/txtPlastico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtPerguntaPlastico"
+            android:textColor="#FF7369"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp" />
+        <EditText
+            android:id="@+id/edtPlastico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/txtHintPerguntaPlastico"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Pergunta sobre avião -->
+        <TextView
+            android:id="@+id/txtAviao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtPerguntaAviao"
+            android:textColor="#FF7369"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp" />
+        <EditText
+            android:id="@+id/edtAviao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/txtHintPerguntaAviao"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Botão de envio -->
+        <Button
+            android:id="@+id/btnEnviarCarbono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtBtnCalcularCarbono"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#FF7369"
+            android:background="@drawable/rounded_button"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="20dp" />
 
     </LinearLayout>
 

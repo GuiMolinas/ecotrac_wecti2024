@@ -33,6 +33,27 @@
     <string name="txtEletricidade"> Eletricidade 💡 </string>
 
     <string name="txtCarbono"> Pegada de Carbono 👣 </string>
+    <string name="txtPerguntaEnergia"> Quantos kWh de eletricidade você consome em média por MÊS? </string>
+    <string name="txtHintPerguntaEnergia"> Ex: 153 </string>
+    <string name="txtPerguntaTransporte"> Quantos quilômetros você viaja por MÊS usando transporte público? </string>
+    <string name="txtHintPerguntaTransporte"> Ex: 20 </string>
+    <string name="txtPerguntaVeiculo"> Quantos quilômetros você dirige com seu veículo pessoal por MÊS? </string>
+    <string name="txtHintPerguntaVeiculo"> Ex: 60 </string>
+    <string name="txtPerguntaDieta"> Qual dessas opções melhor descreve sua dieta? </string>
+    <string-array name="arrayPerguntaDieta">
+        <item> -- Selecione -- </item>
+        <item>Vegetariana</item>
+        <item>Vegana</item>
+        <item>Onívora com baixo consumo de carne</item>
+        <item>Onívora com alto consumo de carne</item>
+    </string-array>
+
+    <string name="txtPerguntaPlastico"> Quantos produtos de plástico de uso único (garrafas, sacolas, copos) você utiliza por MÊS? </string>
+    <string name="txtHintPerguntaPlastico"> Ex: 20 </string>
+    <string name="txtPerguntaAviao"> Quantas viagens aéreas de longa distância você faz por ANO? </string>
+    <string name="txtHintPerguntaAviao"> Ex: 4 </string>
+    <string name="txtBtnCalcularCarbono"> Calcular </string>
+
 
 
 </resources>
