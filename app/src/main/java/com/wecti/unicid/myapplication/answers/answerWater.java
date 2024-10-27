@@ -49,15 +49,15 @@ public class answerWater extends AppCompatActivity {
         txtResultado = findViewById(R.id.txtResultado);
 
         // Exibe os valores de consumo individual nos TextView correspondentes
-        ((TextView) findViewById(R.id.txtConsumoMaquina)).setText("Máquina de Lavar: " + consumoMaquina + "L");
-        ((TextView) findViewById(R.id.txtConsumoTanque)).setText("Tanque: " + consumoTanque + "L");
+        ((TextView) findViewById(R.id.txtConsumoMaquina)).setText("Máquina de Lavar: " + String.format("%.2f", consumoMaquina) + "L");
+        ((TextView) findViewById(R.id.txtConsumoTanque)).setText("Tanque:" + consumoTanque + "L");
         ((TextView) findViewById(R.id.txtConsumoDescarga)).setText("Descarga: " + consumoDescarga + "L");
         ((TextView) findViewById(R.id.txtConsumoBanheiro)).setText("Pia Banheiro: " + consumoPia + "L");
         ((TextView) findViewById(R.id.txtConsumoChuveiro)).setText("Chuveiro: " + consumoChuveiro + "L");
         ((TextView) findViewById(R.id.txtConsumoCozinha)).setText("Pia Cozinha: " + consumoCozinha + "L");
-        ((TextView) findViewById(R.id.txtConsumoLavaLouca)).setText("Lava Louças: " + consumoLavaLouca + "L");
+        ((TextView) findViewById(R.id.txtConsumoLavaLouca)).setText("Lava Louças: " + String.format("%.2f", consumoLavaLouca) + "L");
 
-        txtTotal.setText("Consumo Total - " + total + "L");
+        txtTotal.setText("Consumo Total - " + String.format("%.2f", total) + "L");
 
         // Verifica se ultrapassou o limite e define a conclusão
         if (total > 110) {

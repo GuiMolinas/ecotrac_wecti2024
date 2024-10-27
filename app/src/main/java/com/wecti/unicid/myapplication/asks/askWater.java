@@ -67,13 +67,13 @@ public class askWater extends AppCompatActivity {
         btnEnviarDados.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                double consumoMaquina = obterValor(edtMaquina) * 19;
+                double consumoMaquina = (obterValor(edtMaquina) * 19) / 7;
                 double consumoTanque = obterValor(edtTanque) * 15;
                 double consumoDescarga = obterValor(edtDescarga) * 6;
                 double consumoPia = obterValor(edtPia) * 15;
                 double consumoChuveiro = obterValor(edtChuveiro) * 12;
                 double consumoCozinha = obterValor(edtCozinha) * 15;
-                double consumoLavaLouca = obterValor(edtLavaLouca) * 2;
+                double consumoLavaLouca = (obterValor(edtLavaLouca) * 2) / 7;
 
                 double total = consumoMaquina + consumoTanque + consumoDescarga + consumoPia
                         + consumoChuveiro + consumoCozinha + consumoLavaLouca;
