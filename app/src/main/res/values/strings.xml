@@ -16,7 +16,7 @@
     <string name="txtWater"> Água 💧 </string>
     <string name="txtMaquina"> Quantas vezes você utiliza a máquina de lavar por SEMANA? </string>
     <string name="txtHintMaquina"> Ex: 2 </string>
-    <string name="txtTanque"> Por quantos minutos você usa o tanque por DIA? (Opcional) </string>
+    <string name="txtTanque"> Por quantos minutos você usa o tanque por DIA? </string>
     <string name="txtHintTanque"> Ex: 10 </string>
     <string name="txtDescarga"> Quantas vezes você dá descarga por DIA? </string>
     <string name="txtHintDescarga"> Ex: 3 </string>
@@ -26,7 +26,7 @@
     <string name="txtHintChuveiro"> Ex: 20 </string>
     <string name="txtCozinha"> Por quantos minutos você usa a pia da cozinha por DIA? </string>
     <string name="txtHintCozinha"> Ex: 15 </string>
-    <string name="txtLavaLouca"> Quantas vezes você utiliza a lava-louças por SEMANA? (Opcional) </string>
+    <string name="txtLavaLouca"> Quantas vezes você utiliza a lava-louças por SEMANA? </string>
     <string name="txtHintLavaLouca"> Ex: 6 </string>
     <string name="txtBtnDados"> Enviar Dados </string>
 
@@ -87,6 +87,18 @@
     <string name="txtHintPerguntaAviao"> Ex: 4 </string>
     <string name="txtBtnCalcularCarbono"> Calcular </string>
 
+    <string name="txtOnu"> Consumo Diário Recomendado pela ONU = 110L </string>
+    <string name="txtConsumoMedio"> Seu Consumo Médio Total Diário = </string>
+    <string name="txtConsumos"> Seus Consumos </string>
+    <string name="txtConsumoMaquina"> Máquina de Lavar - </string>
+    <string name="txtConsumoTanque"> Tanque - </string>
+    <string name="txtConsumoDescarga"> Descarga - </string>
+    <string name="txtConsumoBanheiro"> Pia do Banheiro - </string>
+    <string name="txtConsumoChuveiro"> Chuveiro - </string>
+    <string name="txtConsumoCozinha"> Pia da Cozinha - </string>
+    <string name="txtConsumoLavaLouca"> Lava Louças - </string>
+    <string name="txtResultado"> Conclusão</string>
+    <string name="txtBtnProsseguir"> Prosseguir </string>
 
 
 </resources>
