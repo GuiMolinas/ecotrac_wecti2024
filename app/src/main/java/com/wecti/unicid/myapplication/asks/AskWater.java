@@ -7,7 +7,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,9 +16,9 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.bumptech.glide.Glide;
 import com.wecti.unicid.myapplication.R;
-import com.wecti.unicid.myapplication.answers.answerWater;
+import com.wecti.unicid.myapplication.answers.AnswerWater;
 
-public class askWater extends AppCompatActivity {
+public class AskWater extends AppCompatActivity {
 
     ImageView imageView;
     ImageButton back;
@@ -78,7 +77,7 @@ public class askWater extends AppCompatActivity {
                 double total = consumoMaquina + consumoTanque + consumoDescarga + consumoPia
                         + consumoChuveiro + consumoCozinha + consumoLavaLouca;
 
-                Intent intent = new Intent(askWater.this, answerWater.class);
+                Intent intent = new Intent(AskWater.this, AnswerWater.class);
                 intent.putExtra("consumo_total", total);
 
                 intent.putExtra("consumo_maquina", consumoMaquina);

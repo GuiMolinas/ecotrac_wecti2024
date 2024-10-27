@@ -87,7 +87,7 @@
     <string name="txtHintPerguntaAviao"> Ex: 4 </string>
     <string name="txtBtnCalcularCarbono"> Calcular </string>
 
-    <string name="txtOnu"> Consumo Diário Recomendado pela ONU = 110L </string>
+    <string name="txtOnu"> Consumo Diário Recomendado pela ONU (por pessoa) - 110L </string>
     <string name="txtConsumoMedio"> Seu Consumo Médio Total Diário = </string>
     <string name="txtConsumos"> Seus Consumos </string>
     <string name="txtConsumoMaquina"> Máquina de Lavar - </string>
@@ -99,6 +99,8 @@
     <string name="txtConsumoLavaLouca"> Lava Louças - </string>
     <string name="txtResultado"> Conclusão</string>
     <string name="txtBtnProsseguir"> Prosseguir </string>
+
+    <string name="txtMediaEnergia"> Consumo Diário Recomendado (por pessoa)  - 2357 kWh </string>
 
 
 </resources>

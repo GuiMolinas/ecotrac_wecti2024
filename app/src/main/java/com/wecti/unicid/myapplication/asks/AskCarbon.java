@@ -1,6 +1,5 @@
 package com.wecti.unicid.myapplication.asks;
 
-import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -15,7 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 import com.bumptech.glide.Glide;
 import com.wecti.unicid.myapplication.R;
 
-public class askCarbon extends AppCompatActivity {
+public class AskCarbon extends AppCompatActivity {
 
     ImageView imageView;
     ImageButton back;

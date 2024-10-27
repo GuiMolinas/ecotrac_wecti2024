@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".answers.AnswerEletricity"
+    android:fillViewport="true"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <TextView
+            android:id="@+id/txtEletricidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtEletricidade"
+            android:textColor="#FFE134"
+            android:textSize="44sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/txtMediaEnergia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtMediaEnergia"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#FFE134"
+            android:textAlignment="center" />
+
+        <ImageView
+            android:id="@+id/imgTomada"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/tomada"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="0dp"/>
+
+        <TextView
+            android:id="@+id/txtConsumos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtConsumos"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFE134"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/txtTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtConsumoMedio"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFE134"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/txtResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtResultado"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFE134"
+            android:textAlignment="center" />
+
+        <!-- Botão de envio -->
+        <Button
+            android:id="@+id/btnProsseguir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtBtnProsseguir"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#FFE134"
+            android:background="@drawable/rounded_button"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

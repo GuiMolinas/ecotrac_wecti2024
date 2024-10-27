@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools" >
 
     <application
         android:allowBackup="true"
@@ -11,18 +11,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication"
-        tools:targetApi="31">
+        tools:targetApi="31" >
         <activity
-            android:name=".answers.answerWater"
+            android:name=".answers.AnswerEletricity"
             android:exported="false" />
         <activity
-            android:name=".asks.askCarbon"
+            android:name=".answers.AnswerWater"
             android:exported="false" />
         <activity
-            android:name=".asks.askEletricity"
+            android:name=".asks.AskCarbon"
             android:exported="false" />
         <activity
-            android:name=".asks.askWater"
+            android:name=".asks.AskEletricity"
+            android:exported="false" />
+        <activity
+            android:name=".asks.AskWater"
             android:exported="false" />
         <activity
             android:name=".first_contact.Introduction"
@@ -32,7 +35,7 @@
             android:exported="false" />
         <activity
             android:name=".Splash"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

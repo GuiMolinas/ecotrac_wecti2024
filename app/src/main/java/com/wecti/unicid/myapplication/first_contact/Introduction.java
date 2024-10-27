@@ -14,9 +14,9 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.bumptech.glide.Glide;
 import com.wecti.unicid.myapplication.R;
-import com.wecti.unicid.myapplication.asks.askCarbon;
-import com.wecti.unicid.myapplication.asks.askEletricity;
-import com.wecti.unicid.myapplication.asks.askWater;
+import com.wecti.unicid.myapplication.asks.AskCarbon;
+import com.wecti.unicid.myapplication.asks.AskEletricity;
+import com.wecti.unicid.myapplication.asks.AskWater;
 
 public class Introduction extends AppCompatActivity {
 
@@ -47,7 +47,7 @@ public class Introduction extends AppCompatActivity {
         btnWater.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Introduction.this, askWater.class);
+                Intent intent = new Intent(Introduction.this, AskWater.class);
                 startActivity(intent);
             }
         });
@@ -55,7 +55,7 @@ public class Introduction extends AppCompatActivity {
         btnEletricity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Introduction.this, askEletricity.class);
+                Intent intent = new Intent(Introduction.this, AskEletricity.class);
                 startActivity(intent);
             }
         });
@@ -63,7 +63,7 @@ public class Introduction extends AppCompatActivity {
         btnCarbon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Introduction.this, askCarbon.class);
+                Intent intent = new Intent(Introduction.this, AskCarbon.class);
                 startActivity(intent);
             }
         });

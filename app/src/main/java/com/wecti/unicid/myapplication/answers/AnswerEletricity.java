@@ -1,8 +1,6 @@
-package com.wecti.unicid.myapplication.asks;
+package com.wecti.unicid.myapplication.answers;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
@@ -14,34 +12,25 @@ import androidx.core.view.WindowInsetsCompat;
 import com.bumptech.glide.Glide;
 import com.wecti.unicid.myapplication.R;
 
-public class askEletricity extends AppCompatActivity {
+public class AnswerEletricity extends AppCompatActivity {
 
     ImageView imageView;
-    ImageButton back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_ask_eletricity);
+        setContentView(R.layout.activity_answer_eletricity);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        imageView = findViewById(R.id.imgEletricity);
-        back = findViewById(R.id.btnVoltar);
+        imageView = findViewById(R.id.imgTomada);
 
         Glide.with(this)
-                .load(R.drawable.eletricidade)
+                .load(R.drawable.tomada)
                 .into(imageView);
-
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
     }
 }

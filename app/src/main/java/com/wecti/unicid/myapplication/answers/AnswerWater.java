@@ -13,7 +13,7 @@ import androidx.core.view.WindowInsetsCompat;
 import com.bumptech.glide.Glide;
 import com.wecti.unicid.myapplication.R;
 
-public class answerWater extends AppCompatActivity {
+public class AnswerWater extends AppCompatActivity {
 
     ImageView imageView;
     TextView txtTotal, txtResultado;
