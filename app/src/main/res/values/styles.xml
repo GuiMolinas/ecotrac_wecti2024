@@ -1,0 +1,16 @@
+<resources>
+
+    <style name="Widget.MyApplication.AppWidget.Container" parent="android:Widget">
+        <item name="android:background">#F0F0F0</item> <!-- Fundo claro para o contêiner -->
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="Widget.MyApplication.AppWidgetContainer" parent="Theme.AppCompat.Light">
+        <item name="android:textColorPrimary">#333333</item>
+    </style>
+
+    <style name="Widget.MyApplication.AppWidget.InnerView" parent="android:Widget">
+        <item name="android:textColor">#1E88E5</item> <!-- Texto azul para o EcoTrack -->
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+</resources>

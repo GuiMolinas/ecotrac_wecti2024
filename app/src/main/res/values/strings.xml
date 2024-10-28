@@ -106,6 +106,9 @@
     <string name="welcome_message">Bem-vindo(a), %1$s!</string>
     <string name="txtSobre">Sobre o App</string>
     <string name="txtDevolver">  Desenvolvido por Guilherme S. Molina para a 5ª Edição da WECTI - Inteligência Artificial para Um Futuro Sustentável: Inovação, Impacto e Oportunidades </string>
+    <string name="appwidget_text">EcoTrack Status</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
 
 
 </resources>

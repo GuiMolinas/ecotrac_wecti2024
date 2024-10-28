@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#004d00"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/appwidget_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meus Consumos"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/water_consumo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appwidget_text"
+        android:layout_marginTop="8dp"
+        android:textColor="#FFFFFF"
+        android:text="Água: 0L (Recomendado: 110L)" />
+
+    <TextView
+        android:id="@+id/electricity_consumo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/water_consumo"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="8dp"
+        android:text="Eletricidade: 0kWh (Recomendado: 7kWh)" />
+
+    <TextView
+        android:id="@+id/carbon_consumo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/electricity_consumo"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="8dp"
+        android:text="Carbono: 0kg (Recomendado: 4,8kg)" />
+</RelativeLayout>

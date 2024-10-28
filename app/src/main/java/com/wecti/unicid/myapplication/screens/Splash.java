@@ -13,6 +13,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.wecti.unicid.myapplication.R;
+import com.wecti.unicid.myapplication.first_contact.EcoNotificationService;
 import com.wecti.unicid.myapplication.first_contact.Welcome;
 
 /* bom dia - jj */
@@ -29,6 +30,9 @@ public class Splash extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        // Inicia o agendamento de notificações diárias
+        EcoNotificationService.scheduleDailyNotifications(this);
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
