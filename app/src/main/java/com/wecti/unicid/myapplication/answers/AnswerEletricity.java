@@ -1,6 +1,9 @@
 package com.wecti.unicid.myapplication.answers;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -12,6 +15,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.bumptech.glide.Glide;
 import com.wecti.unicid.myapplication.R;
+import com.wecti.unicid.myapplication.screens.Home;
 
 import java.util.ArrayList;
 
@@ -19,6 +23,7 @@ public class AnswerEletricity extends AppCompatActivity {
 
     ImageView imageView;
     TextView txtTotalConsumo, txtConsumoIndividual, txtResultado;
+    ImageButton btnHome;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,9 +42,20 @@ public class AnswerEletricity extends AppCompatActivity {
         txtConsumoIndividual = findViewById(R.id.txtConsumos);
         txtResultado = findViewById(R.id.txtResultado);
 
+        btnHome = findViewById(R.id.btnHome);
+
         Glide.with(this)
                 .load(R.drawable.tomada)
                 .into(imageView);
+
+        btnHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AnswerEletricity.this, Home.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         // Obtendo os dados enviados pela AskEletricity
         Bundle extras = getIntent().getExtras();

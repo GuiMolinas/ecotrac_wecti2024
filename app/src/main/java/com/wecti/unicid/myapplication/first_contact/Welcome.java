@@ -14,6 +14,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.wecti.unicid.myapplication.R;
+import com.wecti.unicid.myapplication.screens.Home;
 
 public class Welcome extends AppCompatActivity {
 
@@ -31,13 +32,13 @@ public class Welcome extends AppCompatActivity {
             return insets;
         });
 
-        //Verifica se a primeira vez do nosso user no app
+        // Verifica se o nome já está salvo
         SharedPreferences prefs = getSharedPreferences("UserPreferences", MODE_PRIVATE);
         String userName = prefs.getString("userName", null);
 
-        if(userName != null) {
-            //se nome estiver salvo, vai para outra tela
-            navigateToScreen();
+        if (userName != null) {
+            // Se o nome estiver salvo, navega para a tela inicial (Home)
+            navigateToHome();
             return;
         }
 
@@ -47,25 +48,19 @@ public class Welcome extends AppCompatActivity {
         btnComecar.setOnClickListener(view -> {
             String name = edtName.getText().toString().trim();
 
-            if(name.isEmpty()) {
+            if (name.isEmpty()) {
                 Toast.makeText(this, "Por favor, digite seu nome.", Toast.LENGTH_SHORT).show();
-            }
-
-            else {
-                //Salva nome
+            } else {
+                // Salva o nome
                 SharedPreferences.Editor editor = prefs.edit();
                 editor.putString("userName", name);
-                editor.putBoolean("isFirstTime", false);
                 editor.apply();
-
-                //Vai para outra tela
-                navigateToScreen();
             }
         });
     }
 
-    private void navigateToScreen() {
-        Intent intent = new Intent(Welcome.this, Introduction.class);
+    private void navigateToHome() {
+        Intent intent = new Intent(Welcome.this, Home.class);
         startActivity(intent);
         finish();
     }

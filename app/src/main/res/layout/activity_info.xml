@@ -1,0 +1,98 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.Info"
+    android:fillViewport="true"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <ImageButton
+            android:id="@+id/btnVoltar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:layout_marginBottom="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/dcspbackArrow"
+            android:padding="8dp"
+            android:src="@drawable/left"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:id="@+id/txtSobre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/txtSobre"
+            android:textAlignment="center"
+            android:textColor="#006400"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp"/>
+
+        <!-- Imagem representativa -->
+        <ImageView
+            android:id="@+id/imgEarth"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/earth"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="0dp"/>
+
+        <!-- Parágrafos adicionais -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:text="O EcoTrack é um aplicativo inovador que permite aos usuários determinar o gasto médio diário de água, eletricidade e pegada de carbono por pessoa. Ele fornece uma análise detalhada do consumo, mostrando se os usuários excederam ou não os valores médios estabelecidos." />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:text="Além disso, o aplicativo oferece dicas valiosas e widgets que facilitam o monitoramento do progresso na economia de recursos." />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:text="O EcoTrack também envia notificações para lembrar os usuários da importância de suas ações e para incentivá-los a exercer seu papel no desenvolvimento sustentável." />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:text="O EcoTrack se alinha aos conceitos de sustentabilidade da ONU, abordando temas como consumo responsável, redução de resíduos e promoção da conservação dos recursos naturais." />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#484D50"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/txtDevolver"/>
+    </LinearLayout>
+
+</ScrollView>

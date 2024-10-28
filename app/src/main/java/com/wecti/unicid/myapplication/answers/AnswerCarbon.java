@@ -1,6 +1,9 @@
 package com.wecti.unicid.myapplication.answers;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -12,10 +15,12 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.bumptech.glide.Glide;
 import com.wecti.unicid.myapplication.R;
+import com.wecti.unicid.myapplication.screens.Home;
 
 public class AnswerCarbon extends AppCompatActivity {
 
     ImageView imageView;
+    ImageButton btnHome;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,9 +35,20 @@ public class AnswerCarbon extends AppCompatActivity {
 
         imageView = findViewById(R.id.imgFootprint);
 
+        btnHome = findViewById(R.id.btnHome);
+
         Glide.with(this)
                 .load(R.drawable.footprint)
                 .into(imageView);
+
+        btnHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AnswerCarbon.this, Home.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         // Recuperar dados
         double energiaFootprint = getIntent().getDoubleExtra("energiaFootprint", 0);

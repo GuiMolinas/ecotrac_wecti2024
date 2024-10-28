@@ -17,6 +17,7 @@ import androidx.core.view.WindowInsetsCompat;
 import com.bumptech.glide.Glide;
 import com.wecti.unicid.myapplication.R;
 import com.wecti.unicid.myapplication.answers.AnswerWater;
+import com.wecti.unicid.myapplication.screens.Home;
 
 public class AskWater extends AppCompatActivity {
 
@@ -59,6 +60,8 @@ public class AskWater extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent = new Intent(AskWater.this, Home.class);
+                startActivity(intent);
                 finish();
             }
         });

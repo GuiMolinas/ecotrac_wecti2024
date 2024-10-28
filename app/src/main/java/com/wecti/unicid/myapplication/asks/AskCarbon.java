@@ -20,6 +20,7 @@ import com.bumptech.glide.Glide;
 import com.wecti.unicid.myapplication.R;
 import com.wecti.unicid.myapplication.answers.AnswerCarbon;
 import com.wecti.unicid.myapplication.calculator.CarbonFootprintCalculator;
+import com.wecti.unicid.myapplication.screens.Home;
 
 public class AskCarbon extends AppCompatActivity {
 
@@ -56,7 +57,14 @@ public class AskCarbon extends AppCompatActivity {
                 .load(R.drawable.carbon)
                 .into(imageView);
 
-        back.setOnClickListener(view -> finish());
+       back.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               Intent intent = new Intent(AskCarbon.this, Home.class);
+               startActivity(intent);
+               finish();
+           }
+       });
 
         btnEnviar.setOnClickListener(view -> calcularPegadaDeCarbono());
     }

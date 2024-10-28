@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.Home"
+    android:fillViewport="true"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <ImageButton
+                android:id="@+id/btnExit"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="8dp"
+                android:src="@drawable/exit"
+                android:scaleType="fitCenter"/>
+
+            <!-- Usando espaço flexível para empurrar o botão info para a direita -->
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <ImageButton
+                android:id="@+id/btnInfo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="8dp"
+                android:src="@drawable/info"
+                android:scaleType="fitCenter"/>
+
+        </LinearLayout>
+
+        <!-- Boas vindas -->
+        <TextView
+            android:id="@+id/txtWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/txtDeVolta"
+            android:textAlignment="center"
+            android:textColor="#006400"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <!-- Imagem  -->
+        <ImageView
+            android:id="@+id/imgMascot"
+            android:layout_width="wrap_content"
+            android:layout_height="280dp"
+            android:src="@drawable/mascot"
+            android:contentDescription="@string/cntMascot"
+            android:layout_marginTop="20dp" />
+
+        <!-- Botão Água -->
+        <Button
+            android:id="@+id/btnWater"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#5DADE2"
+            android:text="@string/txtBtnWater"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="10dp" />
+
+        <!-- Botão Eletricidade -->
+        <Button
+            android:id="@+id/btnEletricity"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#F4D03F"
+            android:text="@string/txtBtnEletricity"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="10dp" />
+
+        <!-- Botão Pegada -->
+        <Button
+            android:id="@+id/btnCarbon"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#E59866"
+            android:text="@string/txtBtnCarbon"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+</ScrollView>

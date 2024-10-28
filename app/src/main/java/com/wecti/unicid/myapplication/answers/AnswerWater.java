@@ -1,6 +1,9 @@
 package com.wecti.unicid.myapplication.answers;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -12,11 +15,14 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.bumptech.glide.Glide;
 import com.wecti.unicid.myapplication.R;
+import com.wecti.unicid.myapplication.screens.Home;
 
 public class AnswerWater extends AppCompatActivity {
 
     ImageView imageView;
     TextView txtTotal, txtResultado;
+
+    ImageButton btnHome;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,9 +37,20 @@ public class AnswerWater extends AppCompatActivity {
 
         imageView = findViewById(R.id.imgRabbit);
 
+        btnHome = findViewById(R.id.btnHome);
+
         Glide.with(this)
                 .load(R.drawable.rabbit)
                 .into(imageView);
+
+        btnHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AnswerWater.this, Home.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         double total = getIntent().getDoubleExtra("consumo_total", 0);
 

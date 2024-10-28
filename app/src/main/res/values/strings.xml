@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">My Application</string>
-    <string name="txtWelcome">Bem Vindo(a) ao EcoTrack!</string>
+    <string name="txtWelcome">Bem-Vindo(a) ao EcoTrack!</string>
     <string name="cntMascot">Mascote do EcoTrack</string>
     <string name="txtInstruction">Para começar, digite seu nome</string>
     <string name="txtHintName"> Digite seu nome </string>
@@ -98,10 +98,14 @@
     <string name="txtConsumoCozinha"> Pia da Cozinha - </string>
     <string name="txtConsumoLavaLouca"> Lava Louças - </string>
     <string name="txtResultado"> Conclusão</string>
-    <string name="txtBtnProsseguir"> Prosseguir </string>
+    <string name="txtBtnProsseguir"> Prosseguir (Dicas)</string>
     <string name="txtMediaEnergia"> Consumo Diário Recomendado (por pessoa)  - 7 kWh </string>
-
     <string name="txtMedioCarbono"> Consumo Diário Recomendado (por pessoa) - 4,8 kg </string>
+
+    <string name="txtDeVolta"> Bem-Vindo(a), Fulano</string>
+    <string name="welcome_message">Bem-vindo(a), %1$s!</string>
+    <string name="txtSobre">Sobre o App</string>
+    <string name="txtDevolver">  Desenvolvido por Guilherme S. Molina para a 5ª Edição da WECTI - Inteligência Artificial para Um Futuro Sustentável: Inovação, Impacto e Oportunidades </string>
 
 
 </resources>
