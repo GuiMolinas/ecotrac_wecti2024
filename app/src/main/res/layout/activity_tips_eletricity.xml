@@ -32,7 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Dicas Divertidas para Economizar Eletricidade e Salvar o Planeta!"
-            android:textColor="#FFE134"
+            android:textColor="#EEAD2D"
             android:textSize="24sp"
             android:textStyle="bold"
             android:layout_marginBottom="16dp"/>
@@ -48,7 +48,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1. Desligue os Vilões!"
-            android:textColor="#FFE134"
+            android:textColor="#EEAD2D"
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_marginBottom="8dp"/>
@@ -64,7 +64,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="2. Hora da Luz Natural!"
-            android:textColor="#FFE134"
+            android:textColor="#EEAD2D"
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_marginBottom="8dp"/>
@@ -80,7 +80,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="3. Troque as Lâmpadas!"
-            android:textColor="#FFE134"
+            android:textColor="#EEAD2D"
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_marginBottom="8dp"/>
@@ -96,7 +96,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="4. Apague as Luzes!"
-            android:textColor="#FFE134"
+            android:textColor="#EEAD2D"
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_marginBottom="8dp"/>
@@ -112,7 +112,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="5. Use Eletrodomésticos Eficientes!"
-            android:textColor="#FFE134"
+            android:textColor="#EEAD2D"
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_marginBottom="8dp"/>
@@ -128,7 +128,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="6. Aproveite a Tecnologia!"
-            android:textColor="#FFE134"
+            android:textColor="#EEAD2D"
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_marginBottom="8dp"/>
@@ -144,7 +144,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="7. A Hora do Despertar!"
-            android:textColor="#FFE134"
+            android:textColor="#EEAD2D"
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_marginBottom="8dp"/>
@@ -160,7 +160,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Conclusão"
-            android:textColor="#FFE134"
+            android:textColor="#EEAD2D"
             android:textSize="24sp"
             android:textStyle="bold"
             android:layout_marginBottom="8dp"/>

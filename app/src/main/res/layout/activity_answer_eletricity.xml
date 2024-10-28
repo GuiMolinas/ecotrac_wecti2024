@@ -34,7 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/txtEletricidade"
-            android:textColor="#FFE134"
+            android:textColor="#EEAD2D"
             android:textSize="44sp"
             android:textStyle="bold"
             android:layout_marginTop="30dp"
@@ -50,7 +50,7 @@
             android:layout_marginBottom="20dp"
             android:textSize="15sp"
             android:textStyle="bold"
-            android:textColor="#FFE134"
+            android:textColor="#EEAD2D"
             android:textAlignment="center" />
 
         <ImageView
@@ -70,7 +70,7 @@
             android:layout_marginBottom="20dp"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:textColor="#FFE134"
+            android:textColor="#000000"
             android:textAlignment="center" />
 
         <TextView
@@ -82,7 +82,7 @@
             android:layout_marginBottom="20dp"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="#FFE134"
+            android:textColor="#EEAD2D"
             android:textAlignment="center" />
 
         <TextView
@@ -94,7 +94,7 @@
             android:layout_marginBottom="20dp"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="#FFE134"
+            android:textColor="#EEAD2D"
             android:textAlignment="center" />
 
         <!-- Botão de envio -->
@@ -104,7 +104,7 @@
             android:layout_height="wrap_content"
             android:text="@string/txtBtnProsseguir"
             android:layout_marginTop="20dp"
-            android:backgroundTint="#FFE134"
+            android:backgroundTint="#EEAD2D"
             android:background="@drawable/rounded_button"
             android:textColor="#FFFFFF"
             android:layout_marginBottom="20dp"/>

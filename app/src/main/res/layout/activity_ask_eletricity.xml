@@ -34,7 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/txtEletricidade"
-            android:textColor="#FFE134"
+            android:textColor="#EEAD2D"
             android:textSize="44sp"
             android:textStyle="bold"
             android:layout_marginTop="30dp"
@@ -56,7 +56,7 @@
             android:text="@string/txtAparelhos"
             android:textSize="20sp"
             android:layout_marginBottom="8dp"
-            android:textColor="#FFE134" />
+            android:textColor="#000000" />
 
         <Spinner
             android:id="@+id/spinnerAparelhos"
@@ -73,7 +73,7 @@
             android:text="@string/txtTempo"
             android:textSize="20sp"
             android:layout_marginBottom="8dp"
-            android:textColor="#FFE134" />
+            android:textColor="#000000" />
 
         <EditText
             android:id="@+id/edtTempo"
@@ -91,7 +91,7 @@
             android:layout_height="wrap_content"
             android:text="@string/txtBtnAdicionar"
             android:layout_marginTop="20dp"
-            android:backgroundTint="#FFE134"
+            android:backgroundTint="#EEAD2D"
             android:layout_gravity="center"
             android:background="@drawable/rounded_button"
             android:textColor="#FFFFFF"
@@ -106,7 +106,7 @@
             android:textSize="20sp"
             android:layout_marginBottom="8dp"
             android:layout_marginTop="16dp"
-            android:textColor="#FFE134" />
+            android:textColor="#EEAD2D" />
 
         <LinearLayout
             android:id="@+id/deviceList"
@@ -121,7 +121,7 @@
             android:layout_height="wrap_content"
             android:text="@string/txtBtnCalcularCarbono"
             android:layout_marginTop="20dp"
-            android:backgroundTint="#FFE134"
+            android:backgroundTint="#EEAD2D"
             android:layout_gravity="center"
             android:background="@drawable/rounded_button"
             android:textColor="#FFFFFF"
