@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".answers.AnswerEletricity"
+    tools:context=".answers.AnswerCarbon"
     android:fillViewport="true"
     android:padding="16dp">
 
@@ -18,11 +18,11 @@
         android:layout_marginEnd="8dp">
 
         <TextView
-            android:id="@+id/txtEletricidade"
+            android:id="@+id/txtCarbono"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/txtEletricidade"
-            android:textColor="#FFE134"
+            android:text="@string/txtCarbono"
+            android:textColor="#FF7369"
             android:textSize="44sp"
             android:textStyle="bold"
             android:layout_marginTop="30dp"
@@ -30,22 +30,22 @@
             android:textAlignment="center" />
 
         <TextView
-            android:id="@+id/txtMediaEnergia"
+            android:id="@+id/txtMediaCarbono"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/txtMediaEnergia"
+            android:text="@string/txtMedioCarbono"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="20dp"
             android:textSize="15sp"
             android:textStyle="bold"
-            android:textColor="#FFE134"
+            android:textColor="#FF7369"
             android:textAlignment="center" />
 
         <ImageView
-            android:id="@+id/imgTomada"
+            android:id="@+id/imgFootprint"
             android:layout_width="match_parent"
             android:layout_height="250dp"
-            android:src="@drawable/tomada"
+            android:src="@drawable/footprint"
             android:layout_marginBottom="20dp"
             android:layout_marginStart="0dp"/>
 
@@ -58,32 +58,30 @@
             android:layout_marginBottom="20dp"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:textColor="#FFE134"
+            android:textColor="#FF7369"
             android:textAlignment="center" />
 
+
         <TextView
-            android:id="@+id/txtTotal"
+            android:id="@+id/txtTotalFootprint"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/txtConsumoMedio"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="20dp"
+            android:text=""
             android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="#FFE134"
-            android:textAlignment="center" />
+            android:textColor="#FF7369"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/txtResultado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/txtResultado"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="20dp"
+            android:text=""
             android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="#FFE134"
-            android:textAlignment="center" />
+            android:textColor="#FF7369"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"/>
+
 
         <!-- Botão de envio -->
         <Button
@@ -92,7 +90,7 @@
             android:layout_height="wrap_content"
             android:text="@string/txtBtnProsseguir"
             android:layout_marginTop="20dp"
-            android:backgroundTint="#FFE134"
+            android:backgroundTint="#FF7369"
             android:background="@drawable/rounded_button"
             android:textColor="#FFFFFF"
             android:layout_marginBottom="20dp"/>

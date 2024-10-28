@@ -99,8 +99,9 @@
     <string name="txtConsumoLavaLouca"> Lava Louças - </string>
     <string name="txtResultado"> Conclusão</string>
     <string name="txtBtnProsseguir"> Prosseguir </string>
+    <string name="txtMediaEnergia"> Consumo Diário Recomendado (por pessoa)  - 7 kWh </string>
 
-    <string name="txtMediaEnergia"> Consumo Diário Recomendado (por pessoa)  - 2357 kWh </string>
+    <string name="txtMedioCarbono"> Consumo Diário Recomendado (por pessoa) - 4,8 kg </string>
 
 
 </resources>

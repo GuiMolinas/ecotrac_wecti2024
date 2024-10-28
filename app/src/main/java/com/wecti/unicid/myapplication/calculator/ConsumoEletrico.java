@@ -1,4 +1,4 @@
-package com.wecti.unicid.myapplication;
+package com.wecti.unicid.myapplication.calculator;
 
 import java.util.HashMap;
 import java.util.Map;
