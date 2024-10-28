@@ -3,6 +3,7 @@ package com.wecti.unicid.myapplication.answers;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -16,6 +17,7 @@ import androidx.core.view.WindowInsetsCompat;
 import com.bumptech.glide.Glide;
 import com.wecti.unicid.myapplication.R;
 import com.wecti.unicid.myapplication.screens.Home;
+import com.wecti.unicid.myapplication.tips.TipsWater;
 
 public class AnswerWater extends AppCompatActivity {
 
@@ -23,6 +25,8 @@ public class AnswerWater extends AppCompatActivity {
     TextView txtTotal, txtResultado;
 
     ImageButton btnHome;
+
+    Button btnProsseguir;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,9 +43,20 @@ public class AnswerWater extends AppCompatActivity {
 
         btnHome = findViewById(R.id.btnHome);
 
+        btnProsseguir = findViewById(R.id.btnProsseguir);
+
         Glide.with(this)
                 .load(R.drawable.rabbit)
                 .into(imageView);
+
+        btnProsseguir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AnswerWater.this, TipsWater.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         btnHome.setOnClickListener(new View.OnClickListener() {
             @Override

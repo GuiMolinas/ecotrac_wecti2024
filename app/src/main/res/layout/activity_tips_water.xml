@@ -1,10 +1,184 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".tips.TipsWater">
+    tools:context=".tips.TipsWater"
+    android:fillViewport="true"
+    android:padding="16dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <!-- Botão para voltar -->
+        <ImageButton
+            android:id="@+id/btnHome"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:layout_marginBottom="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="8dp"
+            android:src="@drawable/home"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dicas Divertidas para Economizar Água e Salvar o Planeta!"
+            android:textColor="#1E3A5F"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Você sabia que a água é um dos recursos mais preciosos que temos? Infelizmente, muitos de nós não dão o devido valor a ela. Mas não se preocupe! Vamos juntos transformar isso em uma missão divertida e sustentável. Prepare-se para entrar no time dos 'Eco-Guardiões da Água'! 🌊✨"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. O Banho do Super-Herói!"
+            android:textColor="#1E3A5F"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quem não ama um bom banho relaxante? Mas que tal torná-lo mais curto e mais eficiente? Tente cronometrar seu banho. Que tal desafiar-se a ser mais rápido do que o seu herói favorito? Um chuveiro de 5 a 10 minutos é suficiente para ficar limpo e ainda deixar água no seu bolso! E se quiser apimentar ainda mais a missão, que tal cantar sua música favorita enquanto se ensaboa? 🎤🚿"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. A Máquina de Lavar: A Super-Estrela do Dia!"
+            android:textColor="#1E3A5F"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A máquina de lavar roupa é uma verdadeira heroína na luta contra a sujeira. Mas ela também tem um superpoder: lavar mais roupas de uma vez! Sempre que possível, espere acumular uma boa quantidade de roupas antes de colocá-las na máquina. E não se esqueça de usar o ciclo econômico – é como dar um tapa no visual sem gastar muito! 👕"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. O Desafio da Descarga!"
+            android:textColor="#1E3A5F"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Você sabia que cada descarga pode gastar até 6 litros de água? Vamos fazer um desafio: que tal usar a técnica do 'disco voador' e reduzir as descargas desnecessárias? Faça xixi na pia (só se for só você em casa, claro!). Outra dica é colocar uma garrafa cheia de água no reservatório do vaso. Assim, você economiza água a cada descarga! 🪣💧"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. Pia da Cozinha: O Caminho do Eco-Chef!"
+            android:textColor="#1E3A5F"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cozinhar é divertido, mas a sujeira também pode ser! Enquanto lava os pratos, evite deixar a água correndo. Use uma bacia ou uma panela para enxaguar e minimize o tempo de torneira aberta. E que tal transformar essa atividade em um desafio? Crie uma competição: quem terminar de lavar os pratos mais rápido sem desperdício, ganha um prêmio! 🥳🍽️"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. O Tanque: O Grande Aliado da Limpeza!"
+            android:textColor="#1E3A5F"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Na hora de usar o tanque, lembre-se: água não é ralo! Tente usar baldes para lavar o carro ou o quintal. Isso economiza água e ainda te dá a chance de se exercitar. Afinal, quem disse que não pode ser divertido ser eco-friendly? 🚗🧽"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6. Use a Tecnologia a Seu Favor!"
+            android:textColor="#1E3A5F"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instale torneiras e chuveiros com tecnologia de economia de água. Alguns modelos são tão estilosos que vão deixar seu banheiro com um visual de spa! Além disso, considere a possibilidade de aproveitar a água da chuva. Que tal criar um reservatório para irrigar o jardim? 🌧️🌼"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7. A Revolução do Reciclar!"
+            android:textColor="#1E3A5F"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E a última, mas não menos importante, dica: recycle! Reutilize a água sempre que possível. Por exemplo, a água que você usou para lavar frutas e verduras pode ser reaproveitada para regar as plantas. Isso é o que chamamos de 'água em dupla função'! 🌿🥦"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conclusão"
+            android:textColor="#1E3A5F"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Junte-se a nós na luta pela conservação da água! Cada gota conta e com pequenas mudanças no seu dia a dia, você pode fazer uma grande diferença. Vamos juntos tornar o planeta um lugar mais sustentável e divertido! 🌍💚"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agora, mãos à obra! Deixe sua criatividade fluir e compartilhe suas próprias dicas de economia de água com amigos e familiares. Afinal, salvar o planeta é uma missão que deve ser levada a sério, mas nunca sem uma pitada de diversão!"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,10 +1,183 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".tips.TipsEletricity">
+    tools:context=".tips.TipsEletricity"
+    android:fillViewport="true"
+    android:padding="16dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <ImageButton
+            android:id="@+id/btnHome"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:layout_marginBottom="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="8dp"
+            android:src="@drawable/home"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dicas Divertidas para Economizar Eletricidade e Salvar o Planeta!"
+            android:textColor="#FFE134"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A eletricidade é uma força vital em nossas casas, mas também pode ser um vilão quando não a utilizamos com sabedoria. Vamos juntos descobrir como ser um verdadeiro 'Super-Herói da Eletricidade' e economizar energia de maneira divertida! ⚡️🦸‍♂️"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Desligue os Vilões!"
+            android:textColor="#FFE134"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Você sabia que aparelhos em stand-by consomem energia mesmo desligados? Desligue os aparelhos da tomada quando não estiver usando, como TVs, computadores e carregadores. Vamos juntos transformar essa tarefa em um jogo! Quem desligar mais aparelhos, ganha um super prêmio! 🏆💡"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Hora da Luz Natural!"
+            android:textColor="#FFE134"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A luz natural é sua melhor amiga! Sempre que possível, aproveite a luz do sol durante o dia. Abra as cortinas e deixe a luz entrar! Você pode até criar um 'desafio da luz' com amigos ou familiares para ver quem consegue ficar mais tempo sem acender a luz durante o dia. ☀️🏡"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Troque as Lâmpadas!"
+            android:textColor="#FFE134"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Se ainda usa lâmpadas incandescentes, chegou a hora de fazer a mudança! As lâmpadas LED consomem até 80% menos energia e têm uma vida útil muito maior. E você pode até fazer uma festa de troca de lâmpadas com seus amigos para celebrar essa escolha sustentável! 💡🎉"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. Apague as Luzes!"
+            android:textColor="#FFE134"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uma das dicas mais simples e eficazes: apague as luzes quando sair de um cômodo! Crie uma música divertida para lembrar de apagar a luz e transforme isso em um pequeno ritual divertido. Você pode até fazer uma dança para lembrar de apagar tudo! 💃✨"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. Use Eletrodomésticos Eficientes!"
+            android:textColor="#FFE134"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ao comprar novos eletrodomésticos, escolha os que têm selo de eficiência energética. Eles podem parecer mais caros, mas você vai notar a diferença na conta de luz! E que tal fazer uma competição para ver quem encontra o eletrodoméstico mais econômico? 🛒⚡️"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6. Aproveite a Tecnologia!"
+            android:textColor="#FFE134"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hoje em dia, existem aplicativos e dispositivos inteligentes que ajudam a monitorar o consumo de energia. Que tal baixar um e fazer um desafio de economia entre amigos? Quem economizar mais na conta de luz no final do mês ganha um prêmio! 📱💡"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7. A Hora do Despertar!"
+            android:textColor="#FFE134"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Use timers ou programadores de horário para desligar luzes e aparelhos automaticamente. Você pode programar o aquecedor ou a iluminação da casa para se ajustarem conforme a sua rotina. Que tal fazer uma competição de quem consegue acordar mais cedo com a luz natural? ⏰🌅"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conclusão"
+            android:textColor="#FFE134"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Economizar eletricidade não precisa ser uma tarefa chata. Com pequenas mudanças e uma dose de criatividade, você pode se tornar um verdadeiro super-herói da economia de energia. Vamos juntos fazer a diferença pelo planeta! 🌍💚"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agora é a sua vez de agir! Compartilhe essas dicas com amigos e familiares e transforme sua casa em um modelo de sustentabilidade e economia de energia!"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+</ScrollView>

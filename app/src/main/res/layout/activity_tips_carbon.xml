@@ -1,10 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".tips.TipsCarbon">
+    tools:context=".tips.TipsCarbon"
+    android:fillViewport="true"
+    android:padding="16dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <ImageButton
+            android:id="@+id/btnHome"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:layout_marginBottom="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="8dp"
+            android:src="@drawable/home"
+            android:scaleType="fitCenter"/>
+
+        <!-- Título principal -->
+        <TextView
+            android:id="@+id/txtTitleCarbon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dicas para Reduzir sua Pegada de Carbono 🌍"
+            android:textColor="#FF7369"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:textAlignment="center" />
+
+        <!-- Títulos e subtítulos das dicas -->
+
+        <!-- Transporte -->
+        <TextView
+            android:id="@+id/txtDica1Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Transporte Sustentável"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FF7369"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/txtDica1Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pense como um super-herói das ruas! Ao escolher a bicicleta, andar a pé ou usar o transporte público, você não só economiza dinheiro como também salva o planeta de toneladas de CO₂. E quem sabe, ainda descobre novas paisagens no caminho! 🚴‍♂️🌳"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Energia -->
+        <TextView
+            android:id="@+id/txtDica2Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Eficiência Energética"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FF7369" />
+
+        <TextView
+            android:id="@+id/txtDica2Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Apague as luzes como um ninja! Desligue o que não estiver usando e substitua as lâmpadas por LED, que são mais eficientes. Não custa nada ser um pouco ‘apagador de luz’, e a conta de energia agradece! 💡🥷"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Dieta -->
+        <TextView
+            android:id="@+id/txtDica3Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Dieta Balanceada e Sustentável"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FF7369" />
+
+        <TextView
+            android:id="@+id/txtDica3Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menos carne, mais verde! Adotar uma dieta rica em vegetais reduz sua pegada de carbono e ainda faz bem para a saúde. Seja um ‘herbívoro ocasional’ e descubra pratos diferentes e saborosos! 🥗🐮"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Climatização -->
+        <TextView
+            android:id="@+id/txtDica4Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. Climatização Inteligente"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FF7369" />
+
+        <TextView
+            android:id="@+id/txtDica4Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ar-condicionado não é melhor amigo do planeta. Use-o com moderação e, se possível, escolha ventiladores ou abra janelas! Seu bolso e a Terra vão agradecer o alívio! 🌬️❄️"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Plásticos -->
+        <TextView
+            android:id="@+id/txtDica5Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. Menos Plástico, Mais Planeta"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FF7369" />
+
+        <TextView
+            android:id="@+id/txtDica5Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aja como se o plástico fosse invisível! Evite produtos descartáveis e reutilize sempre que puder. Até uma pequena mudança no dia a dia causa um impacto enorme para o planeta! ♻️🌊"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>
