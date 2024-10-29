@@ -74,15 +74,6 @@
             android:textColor="#000000"
             android:textAlignment="center"
             android:layout_marginTop="10dp"
-            android:text="O EcoTrack também envia notificações para lembrar os usuários da importância de suas ações e para incentivá-los a exercer seu papel no desenvolvimento sustentável." />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:textColor="#000000"
-            android:textAlignment="center"
-            android:layout_marginTop="10dp"
             android:text="O EcoTrack se alinha aos conceitos de sustentabilidade da ONU, abordando temas como consumo responsável, redução de resíduos e promoção da conservação dos recursos naturais." />
 
         <!-- Novo TextView com dicas para reduzir consumo -->
