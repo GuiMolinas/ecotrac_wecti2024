@@ -16,8 +16,13 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.bumptech.glide.Glide;
 import com.wecti.unicid.myapplication.R;
+import com.wecti.unicid.myapplication.database.DatabaseHelper;
 import com.wecti.unicid.myapplication.screens.Home;
 import com.wecti.unicid.myapplication.tips.TipsCarbon;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Locale;
 
 public class AnswerCarbon extends AppCompatActivity {
 
@@ -25,6 +30,8 @@ public class AnswerCarbon extends AppCompatActivity {
     ImageButton btnHome;
 
     Button btnProsseguir;
+
+    DatabaseHelper databaseHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -102,6 +109,16 @@ public class AnswerCarbon extends AppCompatActivity {
         } else {
             ((TextView) findViewById(R.id.txtResultado)).setText("Dentro da média recomendada.");
         }
+
+        // Inserir dados no banco de dados
+        databaseHelper = new DatabaseHelper(this);
+
+        // Obter a data atual usando Calendar e SimpleDateFormat
+        Calendar calendar = Calendar.getInstance();
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
+        String currentDate = dateFormat.format(calendar.getTime()); // Obter a data formatada
+
+        databaseHelper.insertCarbonEmission(totalFootprint, currentDate);
     }
 
     // Método para formatar os resultados

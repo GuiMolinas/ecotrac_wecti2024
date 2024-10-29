@@ -51,46 +51,7 @@
             android:layout_marginBottom="12dp"
             android:background="#006400"
             android:elevation="4dp">
-
-            <!-- Data do histórico -->
-            <TextView
-                android:id="@+id/txtDataHistorico"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Data: 01/01/2024"
-                android:textColor="#FFFFFF"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-            <!-- Consumo de Água -->
-            <TextView
-                android:id="@+id/txtConsumoAgua"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Consumo de Água: 150L"
-                android:textColor="#FFFFFF"
-                android:textSize="14sp"
-                android:layout_marginTop="4dp" />
-
-            <!-- Consumo de Eletricidade -->
-            <TextView
-                android:id="@+id/txtConsumoEletricidade"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Consumo de Eletricidade: 5.4 kWh"
-                android:textColor="#FFFFFF"
-                android:textSize="14sp"
-                android:layout_marginTop="4dp" />
-
-            <!-- Pegada de Carbono -->
-            <TextView
-                android:id="@+id/txtPegadaCarbono"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Pegada de Carbono: 2.3 kgCO₂"
-                android:textColor="#FFFFFF"
-                android:textSize="14sp"
-                android:layout_marginTop="4dp" />
+            <!-- Os conteúdos do histórico serão adicionados dinamicamente -->
         </LinearLayout>
 
     </LinearLayout>
