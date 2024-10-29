@@ -16,8 +16,13 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.bumptech.glide.Glide;
 import com.wecti.unicid.myapplication.R;
+import com.wecti.unicid.myapplication.database.DatabaseHelper;
 import com.wecti.unicid.myapplication.screens.Home;
 import com.wecti.unicid.myapplication.tips.TipsWater;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
 
 public class AnswerWater extends AppCompatActivity {
 
@@ -100,5 +105,9 @@ public class AnswerWater extends AppCompatActivity {
         } else {
             txtResultado.setText("Consumo dentro do recomendado");
         }
+
+        // Após calcular o total de consumo de água
+        DatabaseHelper dbHelper = new DatabaseHelper(this);
+        dbHelper.insertWaterConsumption(total, new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(new Date()));
     }
 }

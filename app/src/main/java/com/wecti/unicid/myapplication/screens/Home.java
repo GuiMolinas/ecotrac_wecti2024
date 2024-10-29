@@ -22,7 +22,7 @@ import com.wecti.unicid.myapplication.asks.AskWater;
 public class Home extends AppCompatActivity {
 
     ImageButton btnExit, btnInfo;
-    Button btnAgua, btnEletricidade, btnCarbono;
+    Button btnAgua, btnEletricidade, btnCarbono, btnHistorico;
 
 
     @Override
@@ -42,6 +42,7 @@ public class Home extends AppCompatActivity {
         btnAgua = findViewById(R.id.btnWater);
         btnEletricidade = findViewById(R.id.btnEletricity);
         btnCarbono = findViewById(R.id.btnCarbon);
+        btnHistorico = findViewById(R.id.btnHistorico);
 
         // Carregar nome do usuário
         SharedPreferences prefs = getSharedPreferences("UserPreferences", MODE_PRIVATE);
@@ -55,6 +56,14 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Home.this, AskWater.class);
+                startActivity(intent);
+            }
+        });
+
+        btnHistorico.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home.this, Historico.class);
                 startActivity(intent);
             }
         });

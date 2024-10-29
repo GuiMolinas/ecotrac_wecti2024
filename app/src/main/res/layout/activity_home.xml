@@ -114,6 +114,20 @@
             android:textStyle="bold"
             android:padding="10dp" />
 
+        <!-- Botão Pegada -->
+        <Button
+            android:id="@+id/btnHistorico"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#77DD77"
+            android:text="@string/txtBtnHistorico"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="10dp" />
+
     </LinearLayout>
 
 </ScrollView>
