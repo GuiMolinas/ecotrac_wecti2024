@@ -82,7 +82,7 @@ public class AnswerCarbon extends AppCompatActivity {
         double totalFootprint = getIntent().getDoubleExtra("totalFootprint", 0);
 
         // Média para comparação
-        double mediaDiaria = 4.8;
+        double mediaDiaria = 13.2;
 
         // Atualizar TextViews com os valores e cálculo do excesso
         String resultadoEnergia = formatResult("Energia", energiaFootprint, mediaDiaria);

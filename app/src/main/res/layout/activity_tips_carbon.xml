@@ -35,10 +35,10 @@
             android:layout_height="wrap_content"
             android:text="Dicas para Reduzir sua Pegada de Carbono 🌍"
             android:textColor="#FF7369"
-            android:textSize="26sp"
+            android:textSize="24sp"
             android:textStyle="bold"
             android:layout_marginTop="30dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="16dp"
             android:textAlignment="center" />
 
         <!-- Títulos e subtítulos das dicas -->

@@ -94,7 +94,7 @@ public class AnswerWater extends AppCompatActivity {
         ((TextView) findViewById(R.id.txtConsumoCozinha)).setText("Pia Cozinha: " + consumoCozinha + "L");
         ((TextView) findViewById(R.id.txtConsumoLavaLouca)).setText("Lava Louças: " + String.format("%.2f", consumoLavaLouca) + "L");
 
-        txtTotal.setText("Consumo Total - " + String.format("%.2f", total) + "L");
+        txtTotal.setText("Consumo Total: " + String.format("%.2f", total) + "L");
 
         // Verifica se ultrapassou o limite e define a conclusão
         if (total > 110) {
