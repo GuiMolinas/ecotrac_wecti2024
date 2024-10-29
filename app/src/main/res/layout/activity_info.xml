@@ -65,7 +65,7 @@
             android:textColor="#000000"
             android:textAlignment="center"
             android:layout_marginTop="10dp"
-            android:text="Além disso, o aplicativo oferece dicas valiosas e widgets que facilitam o monitoramento do progresso na economia de recursos." />
+            android:text="Além disso, o EcoTrack oferece um widget para facilitar o acesso ao aplicativo e exibir os últimos cálculos realizados pelo usuário. Isso permite uma visualização rápida do progresso e ajuda a manter o controle sobre o consumo de recursos." />
 
         <TextView
             android:layout_width="match_parent"
