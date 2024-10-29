@@ -17,6 +17,12 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
         <!-- Botão para voltar -->
         <ImageButton
             android:id="@+id/btnHome"
@@ -26,8 +32,27 @@
             android:layout_marginBottom="16dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:padding="8dp"
-            android:src="@drawable/home"
+            android:src="@drawable/left"
             android:scaleType="fitCenter"/>
+
+        <!-- Usando espaço flexível para empurrar o botão info para a direita -->
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <!-- Botão para voltar -->
+        <ImageButton
+            android:id="@+id/btnLixeira"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="start"
+            android:layout_marginBottom="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="8dp"
+            android:src="@drawable/lixeira"
+            android:scaleType="fitCenter"/>
+    </LinearLayout>
 
         <TextView
             android:id="@+id/txtHistorico"

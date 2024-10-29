@@ -22,7 +22,7 @@ import com.wecti.unicid.myapplication.database.DatabaseHelper;
 
 public class Historico extends AppCompatActivity {
 
-    private ImageButton btnHome;
+    private ImageButton btnHome, btnLixeira;
     private LinearLayout containerHistorico;
 
     @Override
@@ -40,10 +40,22 @@ public class Historico extends AppCompatActivity {
 
         // Configuração do botão Home
         btnHome = findViewById(R.id.btnHome);
+        btnLixeira = findViewById(R.id.btnLixeira);
+
         btnHome.setOnClickListener(view -> {
             Intent intent = new Intent(Historico.this, Home.class);
             startActivity(intent);
             finish();
+        });
+
+        btnLixeira.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                DatabaseHelper dbHelper = new DatabaseHelper(Historico.this);
+                dbHelper.clearAllHistory();  // Limpa todo o histórico
+                containerHistorico.removeAllViews();  // Remove todas as visualizações do histórico
+                adicionarMensagemNenhumRegistro("Histórico limpo.");  // Adiciona uma mensagem informando que o histórico foi limpo
+            }
         });
 
         // Referência ao container do histórico
@@ -57,6 +69,7 @@ public class Historico extends AppCompatActivity {
     private void carregarHistorico() {
         carregarHistoricoAgua();
         carregarHistoricoCarbono();
+        carregarHistoricoEletricidade();
     }
 
     // Método para carregar o histórico de consumo de água
@@ -78,7 +91,7 @@ public class Historico extends AppCompatActivity {
                     String data = cursor.getString(cursor.getColumnIndexOrThrow(DatabaseHelper.COLUMN_DATE_WATER));
                     double consumoAgua = cursor.getDouble(cursor.getColumnIndexOrThrow(DatabaseHelper.COLUMN_TOTAL_WATER_CONSUMPTION));
                     // Adiciona as informações do histórico de água ao layout
-                    adicionarContainerHistoricoAgua(data, consumoAgua);
+                    adicionarContainerHistorico("Consumo de Água", data, consumoAgua, "L");
                 } while (cursor.moveToNext());
             } else {
                 adicionarMensagemNenhumRegistro("Nenhum histórico de água encontrado.");
@@ -105,7 +118,7 @@ public class Historico extends AppCompatActivity {
                     String data = cursor.getString(cursor.getColumnIndexOrThrow(DatabaseHelper.COLUMN_DATE_CARBON));
                     double totalCarbono = cursor.getDouble(cursor.getColumnIndexOrThrow(DatabaseHelper.COLUMN_TOTAL_CARBON_EMISSION));
                     // Adiciona as informações do histórico de carbono ao layout
-                    adicionarContainerHistoricoCarbono(data, totalCarbono);
+                    adicionarContainerHistorico("Emissões de Carbono", data, totalCarbono, "kg CO₂");
                 } while (cursor.moveToNext());
             } else {
                 adicionarMensagemNenhumRegistro("Nenhum histórico de carbono encontrado.");
@@ -113,32 +126,35 @@ public class Historico extends AppCompatActivity {
         }
     }
 
-    // Método para adicionar informações do histórico de água
-    private void adicionarContainerHistoricoAgua(String data, double consumoAgua) {
-        LinearLayout container = new LinearLayout(this);
-        container.setOrientation(LinearLayout.VERTICAL);
-        container.setPadding(16, 16, 16, 16);
-        container.setElevation(4);
-        container.setBackgroundColor(ContextCompat.getColor(this, R.color.containerBackground)); // Define a cor de fundo
+    // Método para carregar o histórico de consumo de eletricidade
+    private void carregarHistoricoEletricidade() {
+        DatabaseHelper dbHelper = new DatabaseHelper(this);
+        try (SQLiteDatabase db = dbHelper.getReadableDatabase();
+             Cursor cursor = db.query(
+                     DatabaseHelper.TABLE_ELECTRICITY_HISTORY,
+                     null, // Seleciona todas as colunas
+                     null,
+                     null,
+                     null,
+                     null,
+                     DatabaseHelper.COLUMN_ELECTRICITY_ID + " DESC" // Ordena para exibir os mais recentes primeiro
+             )) {
 
-        TextView txtData = new TextView(this);
-        txtData.setText("Data: " + data);
-        txtData.setTextColor(ContextCompat.getColor(this, android.R.color.white));
-        txtData.setTextSize(16);
-        txtData.setTypeface(null, Typeface.BOLD);
-        container.addView(txtData);
-
-        TextView txtConsumoAgua = new TextView(this);
-        txtConsumoAgua.setText("Consumo de Água: " + String.format("%.2f", consumoAgua) + " L");
-        txtConsumoAgua.setTextColor(ContextCompat.getColor(this, android.R.color.white));
-        txtConsumoAgua.setTextSize(14);
-        container.addView(txtConsumoAgua);
-
-        containerHistorico.addView(container);
+            if (cursor != null && cursor.moveToFirst()) {
+                do {
+                    String data = cursor.getString(cursor.getColumnIndexOrThrow(DatabaseHelper.COLUMN_DATE_ELECTRICITY));
+                    double consumoEletricidade = cursor.getDouble(cursor.getColumnIndexOrThrow(DatabaseHelper.COLUMN_TOTAL_ELECTRICITY_CONSUMPTION));
+                    // Adiciona as informações do histórico de eletricidade ao layout
+                    adicionarContainerHistorico("Consumo de Eletricidade", data, consumoEletricidade, "kWh");
+                } while (cursor.moveToNext());
+            } else {
+                adicionarMensagemNenhumRegistro("Nenhum histórico de eletricidade encontrado.");
+            }
+        }
     }
 
-    // Método para adicionar informações do histórico de carbono
-    private void adicionarContainerHistoricoCarbono(String data, double totalCarbono) {
+    // Método genérico para adicionar informações do histórico
+    private void adicionarContainerHistorico(String tipo, String data, double valor, String unidade) {
         LinearLayout container = new LinearLayout(this);
         container.setOrientation(LinearLayout.VERTICAL);
         container.setPadding(16, 16, 16, 16);
@@ -152,11 +168,11 @@ public class Historico extends AppCompatActivity {
         txtData.setTypeface(null, Typeface.BOLD);
         container.addView(txtData);
 
-        TextView txtTotalCarbono = new TextView(this);
-        txtTotalCarbono.setText("Emissões de Carbono: " + String.format("%.2f", totalCarbono) + " kg CO₂");
-        txtTotalCarbono.setTextColor(ContextCompat.getColor(this, android.R.color.white));
-        txtTotalCarbono.setTextSize(14);
-        container.addView(txtTotalCarbono);
+        TextView txtValor = new TextView(this);
+        txtValor.setText(tipo + ": " + String.format("%.2f", valor) + " " + unidade);
+        txtValor.setTextColor(ContextCompat.getColor(this, android.R.color.white));
+        txtValor.setTextSize(14);
+        container.addView(txtValor);
 
         containerHistorico.addView(container);
     }

@@ -16,10 +16,14 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.bumptech.glide.Glide;
 import com.wecti.unicid.myapplication.R;
+import com.wecti.unicid.myapplication.database.DatabaseHelper;
 import com.wecti.unicid.myapplication.screens.Home;
 import com.wecti.unicid.myapplication.tips.TipsEletricity;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Locale;
 
 public class AnswerEletricity extends AppCompatActivity {
 
@@ -98,6 +102,21 @@ public class AnswerEletricity extends AppCompatActivity {
             } else {
                 txtResultado.setText("Seu consumo está dentro do limite recomendado.");
             }
+
+            // Registrar o consumo de eletricidade no banco de dados
+            registrarConsumoEletricidade(consumoTotal);
         }
     }
+
+    // Método para registrar o consumo de eletricidade no banco de dados
+    private void registrarConsumoEletricidade(double consumoTotal) {
+        DatabaseHelper dbHelper = new DatabaseHelper(this);
+
+        // Obtém a data atual
+        String data = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(Calendar.getInstance().getTime());
+
+        // Insere o consumo total no banco de dados
+        dbHelper.insertElectricityConsumption(consumoTotal, data);
+    }
+
 }
