@@ -89,6 +89,16 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:text="O EcoTrack envia notificações diárias para lembrar os usuários de praticarem a sustentabilidade e adotarem medidas para salvar o planeta. Essas notificações incentivam o desenvolvimento de hábitos mais conscientes e responsáveis." />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:textSize="12sp"
             android:textColor="#484D50"
             android:textAlignment="center"

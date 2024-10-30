@@ -64,18 +64,22 @@
             android:exported="false" />
         <activity
             android:name=".asks.AskCarbon"
+            android:windowSoftInputMode="adjustResize"
             android:exported="false" />
         <activity
             android:name=".asks.AskEletricity"
+            android:windowSoftInputMode="adjustResize"
             android:exported="false" />
         <activity
             android:name=".asks.AskWater"
+            android:windowSoftInputMode="adjustResize"
             android:exported="false" />
         <activity
             android:name=".screens.Info"
             android:exported="false" />
         <activity
             android:name=".first_contact.Welcome"
+            android:windowSoftInputMode="adjustResize"
             android:exported="false" />
         <activity
             android:name=".screens.Splash"

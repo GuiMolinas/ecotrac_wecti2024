@@ -46,8 +46,7 @@
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:src="@drawable/eletricidade"
-            android:layout_marginBottom="20dp"
-            android:layout_marginStart="0dp"/>
+            android:layout_marginBottom="20dp" />
 
         <TextView
             android:id="@+id/txtAparelhos"
@@ -63,8 +62,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:entries="@array/arrayPerguntaAparelho"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginBottom="16dp" />
 
         <TextView
             android:id="@+id/txtTempo"
@@ -81,10 +79,8 @@
             android:layout_height="wrap_content"
             android:inputType="numberDecimal"
             android:hint="@string/txtHintTempo"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginBottom="8dp" />
 
-        <!-- Botão para adicionar dispositivo à lista -->
         <Button
             android:id="@+id/btnAdicionar"
             android:layout_width="wrap_content"
@@ -92,12 +88,10 @@
             android:text="@string/txtBtnAdicionar"
             android:layout_marginTop="20dp"
             android:backgroundTint="#EEAD2D"
-            android:layout_gravity="center"
             android:background="@drawable/rounded_button"
             android:textColor="#FFFFFF"
             android:layout_marginBottom="10dp" />
 
-        <!-- Lista de dispositivos adicionados -->
         <TextView
             android:id="@+id/txtSelecionados"
             android:layout_width="wrap_content"
@@ -105,7 +99,6 @@
             android:text="@string/txtSelecionados"
             android:textSize="20sp"
             android:layout_marginBottom="8dp"
-            android:layout_marginTop="16dp"
             android:textColor="#EEAD2D" />
 
         <LinearLayout
@@ -114,7 +107,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" />
 
-        <!-- Botão de cálculo -->
         <Button
             android:id="@+id/btnCalcular"
             android:layout_width="wrap_content"
@@ -122,11 +114,9 @@
             android:text="@string/txtBtnCalcularCarbono"
             android:layout_marginTop="20dp"
             android:backgroundTint="#EEAD2D"
-            android:layout_gravity="center"
             android:background="@drawable/rounded_button"
             android:textColor="#FFFFFF"
             android:layout_marginBottom="20dp"/>
 
     </LinearLayout>
-
 </ScrollView>
